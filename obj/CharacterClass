@@ -1,0 +1,34 @@
+internal class CharacterClass
+{
+    public class Character()
+    {
+        public string gender;
+        public string name;
+        public void SetName()
+        {
+            Console.WriteLine("Please insert your first and last name");
+            name = Console.ReadLine();
+        }
+        public string GetName()
+        {
+            return name;
+        }
+        public void SetGender()
+        {
+            string _gender;
+            Console.WriteLine("Please enter your gender M/F");
+            _gender = Console.ReadLine();
+            if (_gender == "M")
+                this.gender = "M";
+            if (_gender == "F")
+                this.gender = "F";
+            else
+                Console.WriteLine("An invalid gender has been entered");
+            gender = this.gender;
+        }
+        public string GetGender()
+        {
+            return gender;
+        }
+    }
+}
